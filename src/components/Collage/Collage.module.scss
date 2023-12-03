@@ -1,0 +1,58 @@
+.content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+
+    &__photo {
+        width: 100%;
+        object-fit: cover;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.5s ease;
+        }
+    }
+
+    &__desc {
+        display: none;
+        position: absolute;
+        font-family: $pompiere-font;
+        color: $main-white;
+        font-size: 40px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        text-align: center;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &:hover {
+            display: block;
+        }
+    }
+
+    &__subdesc {
+        display: none;
+        position: absolute;
+        font-family: $pompiere-font;
+        color: $main-white;
+        width: 200px;
+        font-size: 40px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        text-align: center;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &:hover {
+            display: block;
+        }
+    }
+}
