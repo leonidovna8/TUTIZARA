@@ -1,0 +1,7 @@
+.header {
+    background-color: $main-grey;
+    transition: transform .3s ease, padding .3s ease;
+    width: 100%;
+    grid-template-rows: repeat(2, 0.3fr);
+
+}

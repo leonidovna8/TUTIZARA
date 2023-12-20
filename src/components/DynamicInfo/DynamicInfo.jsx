@@ -1,7 +1,8 @@
+import * as React from "react";
 import { useState, useEffect, useRef } from "react";
-import styles from "./DinamicInfo.module.scss";
+import styles from "./DynamicInfo.module.scss";
 
-function DinamicInfo() {
+function DynamicInfo() {
   const refNum = useRef(null);
   const refRate = useRef(null);
   const refNumber = useRef(null);
@@ -91,41 +92,41 @@ function DinamicInfo() {
   }, []);
 
   return (
-      <main className={styles.infoWrapper}>
-        <img src="./images/general-3.png" alt="About" className={styles.img} />
-        <div className={styles.info}>
-          <h4 className={styles.info__title}>
-            Наше досягнення - ваше задоволення
-          </h4>
+    <section className={styles.dynamicInfoWrapper}>
+      <img src="./images/general-3.png" alt="About" className={styles.img} />
+      <div className={styles.info}>
+        <h4 className={styles.info__title}>
+          Наше досягнення - ваше задоволення
+        </h4>
 
-          <ul className={styles.dataSet}>
-            <li className={styles.dataSet__item}>
-              <span ref={refNum} className={styles.data}>
-                {numValue}+
-              </span>
-              <p className={styles.text}>Індивідуальних фотосессій</p>
-            </li>
-            <li className={styles.dataSet__item}>
+        <ul className={styles.dataSet}>
+          <li className={styles.dataSet__item}>
+            <span ref={refNum} className={styles.data}>
+              {numValue}+
+            </span>
+            <p className={styles.text}>Індивідуальних фотосессій</p>
+          </li>
+          <li className={styles.dataSet__item}>
             <span ref={refRates} className={styles.data}>
-                {ratesValue}+
-              </span>
-              <p className={styles.text}>Індивідуальних фотосессій</p>
-            </li>
-            <li className={styles.dataSet__item}>
-              <span ref={refRate} className={styles.data}>
-                {rateValue}+
-              </span>
-              <p className={styles.text}>Подарункових сертифікатів</p>
-            </li>
-            <li className={styles.dataSet__item}>
+              {ratesValue}+
+            </span>
+            <p className={styles.text}>Індивідуальних фотосессій</p>
+          </li>
+          <li className={styles.dataSet__item}>
+            <span ref={refRate} className={styles.data}>
+              {rateValue}+
+            </span>
+            <p className={styles.text}>Подарункових сертифікатів</p>
+          </li>
+          <li className={styles.dataSet__item}>
             <span ref={refNumber} className={styles.data}>
-                {numberValue}+
-              </span>
-              <p className={styles.text}>Подарункових сертифікатів</p>
-            </li>
-          </ul>
-        </div>
-      </main>
+              {numberValue}+
+            </span>
+            <p className={styles.text}>Подарункових сертифікатів</p>
+          </li>
+        </ul>
+      </div>
+    </section>
   );
 }
-export default DinamicInfo;
+export default DynamicInfo;

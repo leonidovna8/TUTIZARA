@@ -1,0 +1,95 @@
+.footer {
+    width: 100%;
+    background-color: $main-grey;
+    text-align: -webkit-center;
+
+    &__container {
+        max-width: 1054px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.contact {
+    margin: 0;
+    padding: 34px 0 44px;
+    display: flex;
+    justify-content: space-evenly;
+
+    &__item {
+
+        list-style: none;
+        display: grid;
+        justify-items: center;
+        gap: 12px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__text {
+        font-family: $comfortaa-font;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        color: $main-white;
+        margin: 0;
+        padding-bottom: 18px;
+        grid-column: 1 / span 2;
+    }
+
+    &__link {
+        font-family: $comfortaa-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $main-white;
+        text-decoration: none;
+        cursor: pointer;
+        grid-row-start: 2;
+        grid-column: 1 / span 2;
+    }
+}
+
+.telegramIcon {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.instaIcon {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 67px;
+    padding-bottom: 44px;
+
+    &__item {
+        list-style: none;
+        font-family: $comfortaa-font;
+        color: $main-white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration: none;
+    }
+}
+
+.desc {
+    font-family: $comfortaa-font;
+    color: $main-white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+    padding-bottom: 34px;
+    margin: 0;
+}

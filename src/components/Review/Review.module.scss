@@ -1,0 +1,52 @@
+.title {
+    color: $main-grey;
+    font-family: $comfortaa-font;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 0;
+    padding: 60px 0 32px;
+}
+
+.reviewContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 427px;
+    border: 1px solid $main-grey;
+    padding: 24px 22px;
+}
+
+.userName {
+    color: $main-grey;
+    text-align: center;
+    font-family: $pompiere-font;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    margin: 0;
+    padding-top: 12px;
+}
+
+.userReview {
+    color: $main-grey;
+    max-width: 383px;
+    text-align: center;
+    font-family: $comfortaa-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding-top: 18px;
+}

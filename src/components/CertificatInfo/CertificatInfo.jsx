@@ -1,12 +1,11 @@
-// @flow
 import * as React from "react";
-import Container from "../Container/Container";
 import { useNavigate } from "react-router-dom";
+import Container from "../Container/Container";
 import styles from "./CertificatInfo.module.scss";
 import Button from "../Button/Button";
 
-const CertificatInfo = () => {
-    const navigate = useNavigate();
+function CertificatInfo() {
+  const navigate = useNavigate();
   return (
     <>
       <Container>
@@ -39,10 +38,10 @@ const CertificatInfo = () => {
           />
         </div>
       </Container>
-      <div className={styles.imageContainer}>
-        <img src="/images/Certificate.png" alt="Certificate" width="100%"/>
+      <div className={styles.certificateContainer}>
+        <img src="/images/Certificate.png" alt="Certificate" />
       </div>
     </>
   );
-};
+}
 export default CertificatInfo;

@@ -6,6 +6,7 @@
 
 .viewPortfolio {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 32px 0;
 }
@@ -20,7 +21,7 @@
     color: $main-grey;
 }
 
-.content {
+.collage {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

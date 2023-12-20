@@ -1,11 +1,14 @@
-import { Routes, Route } from 'react-router-dom';
+import * as React from "react";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
-import ErrorPage from './pages/ErrorPage/ErrorPage';
-import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
-import PricePage from './pages/PricePage/PricePage';
-import TeamPage from './pages/TeamPage/TeamPage';
-import StudiosPage from './pages/StudiosPage/StudiosPage';
-import ContactsPage from './pages/ContactsPage/ContactsPage';
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
+import PricePage from "./pages/PricePage/PricePage";
+import TeamPage from "./pages/TeamPage/TeamPage";
+import StudiosPage from "./pages/StudiosPage/StudiosPage";
+import ContactsPage from "./pages/ContactsPage/ContactsPage";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/HeaderGeneral/HeaderGeneral";
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }

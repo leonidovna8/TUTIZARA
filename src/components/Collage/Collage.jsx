@@ -1,10 +1,13 @@
+import * as React from "react";
+import { useNavigate } from "react-router-dom";
 import Container from "../Container/Container";
 import Button from "../Button/Button";
 import styles from "./Collage.module.scss";
 
 function Collage() {
+  const navigate = useNavigate();
   return (
-    <div className={styles.containerContent}>
+    <>
       <Container>
         <div className={styles.viewPortfolio}>
           <p className={styles.desc}>
@@ -20,7 +23,7 @@ function Collage() {
           />
         </div>
       </Container>
-      <div className={styles.content}>
+      <div className={styles.collage}>
         <div className={styles.image}>
           <img
             className={styles.image__photo}
@@ -94,7 +97,7 @@ function Collage() {
           <p className={styles.image__subdesc}>love story</p>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 export default Collage;

@@ -1,18 +1,23 @@
-import DinamicInfo from "../../components/AnimationInfo/DinamicInfo";
-import Collage from "../../components/Collage/Collage";
+import * as React from "react";
+import HeaderGeneral from "../../components/HeaderGeneral/HeaderGeneral";
+import PhotoSwiper from "../../components/PhotoSwiper/PhotoSwiper";
 import InfoAbout from "../../components/InfoAbout/InfoAbout";
+import DynamicInfo from "../../components/DynamicInfo/DynamicInfo";
+import Review from "../../components/Review/Review";
+import Collage from "../../components/Collage/Collage";
 import CertificatInfo from "../../components/CertificatInfo/CertificatInfo";
-// import PhotoSwiper from "../../components/PhotoSwiper/PhotoSwiper";
 
-function HomePage () {
-    return (
-        <div>
-            {/* <PhotoSwiper /> */}
-            <InfoAbout />
-            <DinamicInfo />
-            <Collage />
-            <CertificatInfo />
-        </div>
-    );
+function HomePage() {
+  return (
+    <>
+      <HeaderGeneral />
+      <PhotoSwiper />
+      <InfoAbout />
+      <DynamicInfo />
+      <Review />
+      <Collage />
+      <CertificatInfo />
+    </>
+  );
 }
 export default HomePage;
